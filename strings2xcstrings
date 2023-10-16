@@ -1,0 +1,5 @@
+#!/bin/bash
+
+chmod +x strings2xcstrings
+sudo mv strings2xcstrings /usr/local/bin/
+python /strings2xcstrings.py

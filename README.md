@@ -7,5 +7,5 @@ You just need to navigate to the directory where your localization files are loc
 
 ```shell
 > cd project_localization_directory
-> strings2xcstrings
+> install
 ```

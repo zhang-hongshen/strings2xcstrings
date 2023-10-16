@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 import os
+import random
 import re
 import json
 
 directory = os.getcwd()
 translation_data = {}
-
 keys = set()
 # scan .lproj folder
 for root, dirs, files in os.walk(directory):
@@ -34,7 +34,7 @@ for root, dirs, files in os.walk(directory):
 
 # write into .xcstrings file
 xcstringsFileData = {
-    "sourceLanguage": "zh-Hans",
+    "sourceLanguage": random.choice(list(translation_data.keys())),
     "strings": {},
     "version": "1.0"
 }
